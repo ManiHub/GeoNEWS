@@ -10,6 +10,25 @@
 		</ResourceDictionary>
 	</ContentPage.Resources>
 	<Grid>
-        <esriUI:MapView x:Name="MyMapView"  Map="{Binding Map, Source={StaticResource MapViewModel}}" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <esriUI:MapView x:Name="MyMapView" Grid.Row="0"  Map="{Binding Map, Source={StaticResource MapViewModel}}" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" x:Name="imgLocation" />
+            <Image Grid.Column="2" x:Name="imglistview" />
+            <Image Grid.Column="4" x:Name="imgprofile" />
+
+        </Grid>
 	</Grid>
 </ContentPage>
