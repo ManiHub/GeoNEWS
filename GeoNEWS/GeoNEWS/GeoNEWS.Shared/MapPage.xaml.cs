@@ -17,15 +17,15 @@ namespace GeoNEWS
     {
         // Constants for OAuth-related values ...
         // URL of the server to authenticate with
-        private const string ServerUrl = "https://summerinterns.maps.arcgis.com/sharing/rest";
+        private const string ServerUrl = "";
         // TODO: Provide the client ID for your app (registered with the server)
-        private const string ClientId = "o4mlpsRN6IJARJSK";
+        private const string ClientId = "";
         // TODO: [optional] Provide the client secret for the app (only needed for the OAuthAuthorizationCode auth type)
-        private const string ClientSecret = "43b4d51db14d4100b7d14d4d917d4a3e";
+        private const string ClientSecret = "";
         // TODO: Provide a URL registered for the app for redirecting after a successful authorization
-        private const string RedirectUrl = "https://developers.arcgis.com";
+        private const string RedirectUrl = "";
         // TODO: Provide an ID for a secured web map item hosted on the server
-        private const string WebMapId = "6291995bb09f4f989148b6f58e491ff3";
+        private const string WebMapId = "";
 
         public MapPage()
         {
